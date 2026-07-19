@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo App</title>
     <link rel="stylesheet" href="style.css" />
+    <script type="module" src="./app.js"></script>
   </head>
   <body>
     <main class="page">
@@ -14,40 +15,20 @@
             <p class="eyebrow">Today</p>
             <h1>My Tasks</h1>
           </div>
-          <div class="badge">3 remaining</div>
         </div>
 
         <form class="task-form">
-          <input type="text" placeholder="Add a new task" aria-label="New task" />
-          <button type="submit">Add</button>
+          <input type="text" placeholder="Add a new task" aria-label="New task" class="input"/>
+          <button type="submit" class="btn">Add</button>
         </form>
 
-        <ul class="task-list">
-          <li class="task-item done">
-            <label>
-              <input type="checkbox" checked />
-              <span>Plan the day</span>
-            </label>
-            <span class="tag">Morning</span>
-          </li>
-          <li class="task-item">
-            <label>
-              <input type="checkbox" />
-              <span>Review project notes</span>
-            </label>
-            <span class="tag">Work</span>
-          </li>
-          <li class="task-item">
-            <label>
-              <input type="checkbox" />
-              <span>Take a short walk</span>
-            </label>
-            <span class="tag">Wellness</span>
-          </li>
-        </ul>
 
+        <div class="tasks">
+
+        </div>
         <p class="footer-note">A calm and focused space for your plans.</p>
       </section>
     </main>
+
   </body>
 </html>
